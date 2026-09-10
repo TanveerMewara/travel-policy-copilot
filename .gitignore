@@ -7,3 +7,4 @@ data/index/
 logs/
 .tools/
 .portfolio-work/
+.vercel-stage/

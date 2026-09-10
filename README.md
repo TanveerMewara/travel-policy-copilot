@@ -9,6 +9,8 @@ telemetry, tests, a Streamlit interface, and container deployment.
 All included policies are fictional examples. They are not Mondee or supplier
 policies.
 
+[Live Vercel demo](https://travel-policy-copilot.vercel.app) · [GitHub repository](https://github.com/TanveerMewara/travel-policy-copilot)
+
 ## Why this project stands out
 
 - Combines semantic and lexical keyword signals with Reciprocal Rank Fusion.
@@ -69,7 +71,9 @@ Run the engineering checks:
 .\.venv\Scripts\python.exe evaluate_answers.py
 ```
 
-Or run it with Docker:
+The Vercel URL is a lightweight browser preview because Streamlit requires a long-lived WebSocket server. The full embedding, reranker, and generation pipeline runs through the local Streamlit or Docker commands below.
+
+Or run the full pipeline with Docker:
 
 ```powershell
 docker compose up --build
