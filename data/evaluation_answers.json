@@ -1,0 +1,8 @@
+[
+  {"id":"answer-harbor-2026-cancel","question":"Under the 2026 Harbor Hotel standard policy, what happens if I cancel 36 hours before check-in?","expected_source":"data/policies/harbor_standard.md","expected_terms":["first night"]},
+  {"id":"answer-harbor-2025-cancel","question":"For the 2025 Harbor Hotel standard rate, what is the charge when cancelling 60 hours before check-in?","expected_source":"data/policies/harbor_standard_2025.md","expected_terms":["two nights"]},
+  {"id":"answer-pine-2025-checkin","question":"What was the standard check-in time at Pine Hotel during 2025?","expected_source":"data/policies/pine_standard_2025.md","expected_terms":["1 pm"]},
+  {"id":"answer-pine-2026-checkin","question":"What is Pine Hotel's standard check-in time in 2026?","expected_source":"data/policies/pine_standard.md","expected_terms":["2 pm"]},
+  {"id":"answer-summit-flex-cancel","question":"What does Summit Hotel's 2026 flexible rate charge for cancelling 8 hours before check-in?","expected_source":"data/policies/summit_flexible.md","expected_terms":["25 percent","first night"]},
+  {"id":"answer-summit-saver-refund","question":"Can a 2026 Summit Hotel saver booking be refunded after purchase?","expected_source":"data/policies/summit_saver.md","expected_terms":["non refundable"]}
+]

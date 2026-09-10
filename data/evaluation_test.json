@@ -1,0 +1,62 @@
+[
+  {
+    "id": "test-harbor-2025-refund",
+    "question": "Would a Harbor standard booking from 2025 be fully refundable exactly three days before check-in?",
+    "expected_source": "data/policies/harbor_standard_2025.md",
+    "expected_section": "Cancellation"
+  },
+  {
+    "id": "test-harbor-2026-refund",
+    "question": "Which cancellation rule applies to a Harbor standard reservation in 2026?",
+    "expected_source": "data/policies/harbor_standard.md",
+    "expected_section": "Cancellation"
+  },
+  {
+    "id": "test-harbor-2025-checkin",
+    "question": "For a 2025 Harbor standard reservation, at what time may the guest arrive?",
+    "expected_source": "data/policies/harbor_standard_2025.md",
+    "expected_section": "Check-in"
+  },
+  {
+    "id": "test-pine-2025-cancel",
+    "question": "Does cancelling Pine Hotel's 2025 standard rate 36 hours early cause a charge?",
+    "expected_source": "data/policies/pine_standard_2025.md",
+    "expected_section": "Cancellation"
+  },
+  {
+    "id": "test-pine-2026-arrival",
+    "question": "Tell me the arrival time in Pine Hotel's standard 2026 terms.",
+    "expected_source": "data/policies/pine_standard.md",
+    "expected_section": "Check-in"
+  },
+  {
+    "id": "test-summit-flex-refund",
+    "question": "Can a Summit flexible reservation be refunded when cancelled one day early?",
+    "expected_source": "data/policies/summit_flexible.md",
+    "expected_section": "Cancellation"
+  },
+  {
+    "id": "test-summit-saver-refund",
+    "question": "Is money returned after cancelling the Summit saver option?",
+    "expected_source": "data/policies/summit_saver.md",
+    "expected_section": "Cancellation"
+  },
+  {
+    "id": "test-unsupported-wifi",
+    "question": "What is the Wi-Fi password at Harbor Hotel?",
+    "expected_source": null,
+    "expected_section": null
+  },
+  {
+    "id": "test-unsupported-pool",
+    "question": "What time does the Pine Hotel swimming pool close?",
+    "expected_source": null,
+    "expected_section": null
+  },
+  {
+    "id": "test-unsupported-room-service",
+    "question": "Can I order room service at Summit Hotel after midnight?",
+    "expected_source": null,
+    "expected_section": null
+  }
+]

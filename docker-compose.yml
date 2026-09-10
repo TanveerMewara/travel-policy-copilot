@@ -1,0 +1,13 @@
+services:
+  travel-policy-copilot:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data/policies:/app/data/policies
+      - rag-index:/app/data/index
+      - ./logs:/app/logs
+    restart: unless-stopped
+
+volumes:
+  rag-index:

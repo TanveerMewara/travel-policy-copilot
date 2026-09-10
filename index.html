@@ -1,0 +1,129 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Travel Policy Copilot — an evaluated, version-aware RAG portfolio project." />
+    <meta property="og:title" content="Travel Policy Copilot" />
+    <meta property="og:description" content="Hybrid retrieval, cross-encoder reranking, grounded answers, citations, and abstention." />
+    <meta name="theme-color" content="#07111f" />
+    <title>Travel Policy Copilot · RAG Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/web/styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="nav shell">
+      <a class="brand" href="#top"><span class="brand-mark">TP</span><span>Travel Policy Copilot</span></a>
+      <nav>
+        <a href="#architecture">Architecture</a>
+        <a href="#evaluation">Evaluation</a>
+        <a class="github-link" href="https://github.com/TanveerMewara/travel-policy-copilot" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="eyebrow"><span></span> LOCAL, EVALUATED RAG SYSTEM</div>
+        <h1>Policy answers with<br /><em>evidence you can inspect.</em></h1>
+        <p class="hero-copy">A production-shaped RAG pipeline for versioned travel policies: hybrid retrieval, cross-encoder reranking, calibrated abstention, grounded generation, and citations.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#demo">Try the live demo <span>↓</span></a>
+          <a class="button secondary github-link" href="https://github.com/TanveerMewara/travel-policy-copilot" target="_blank" rel="noreferrer">View source ↗</a>
+        </div>
+        <div class="metric-strip">
+          <div><strong>100%</strong><span>Held-out reranked Hit@1</span></div>
+          <div><strong>100%</strong><span>Answerability accuracy</span></div>
+          <div><strong>14</strong><span>Versioned policy chunks</span></div>
+          <div><strong>10/10</strong><span>Automated tests passing</span></div>
+        </div>
+      </section>
+
+      <section id="demo" class="demo-section shell">
+        <div class="section-heading">
+          <div><span class="index">01</span><h2>Query the policy index</h2></div>
+          <p>This browser deployment mirrors the safeguards using a lightweight retrieval preview. The repository contains the full local embedding, cross-encoder, and FLAN-T5 pipeline.</p>
+        </div>
+
+        <div class="workspace">
+          <div class="query-panel">
+            <div class="panel-label"><span class="status-dot"></span> PIPELINE READY</div>
+            <label for="question">Ask a travel-policy question</label>
+            <div class="input-row">
+              <textarea id="question" rows="3" placeholder="Ask about a hotel, rate, policy year, cancellation, or check-in…"></textarea>
+              <button id="ask-button" aria-label="Run query">Run <span>→</span></button>
+            </div>
+            <div class="examples">
+              <span>Try an example</span>
+              <button data-question="Under the 2026 Harbor Hotel standard policy, what happens if I cancel 36 hours before check-in?">Supported</button>
+              <button data-question="What is the Harbor Hotel standard cancellation policy?">Ambiguous year</button>
+              <button data-question="Does Harbor Hotel provide an airport transfer?">Unsupported</button>
+            </div>
+          </div>
+
+          <div id="result-panel" class="result-panel empty" aria-live="polite">
+            <div class="empty-state">
+              <div class="radar"><i></i><i></i><span></span></div>
+              <p>Your answer and retrieval trace will appear here.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="architecture" class="architecture shell">
+        <div class="section-heading">
+          <div><span class="index">02</span><h2>Two paths, one reliable answer</h2></div>
+          <p>Documents are processed once. Each question then travels through independently measurable retrieval and generation stages.</p>
+        </div>
+        <div class="flow-card">
+          <div class="flow-label">OFFLINE INDEXING</div>
+          <div class="flow">
+            <div class="node"><b>01</b><strong>Policies</strong><small>Markdown + PDF</small></div><span>→</span>
+            <div class="node"><b>02</b><strong>Chunk</strong><small>Text + metadata</small></div><span>→</span>
+            <div class="node"><b>03</b><strong>Embed</strong><small>384-d vectors</small></div><span>→</span>
+            <div class="node accent"><b>04</b><strong>Index</strong><small>Persistent + fingerprinted</small></div>
+          </div>
+          <div class="flow-label online">ONLINE QUERY</div>
+          <div class="flow flow-long">
+            <div class="node"><b>01</b><strong>Retrieve</strong><small>Semantic + keyword</small></div><span>→</span>
+            <div class="node"><b>02</b><strong>Fuse</strong><small>Reciprocal Rank Fusion</small></div><span>→</span>
+            <div class="node"><b>03</b><strong>Rerank</strong><small>Cross-encoder</small></div><span>→</span>
+            <div class="node"><b>04</b><strong>Guard</strong><small>Version + threshold</small></div><span>→</span>
+            <div class="node accent"><b>05</b><strong>Answer</strong><small>Grounded + cited</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="evaluation" class="evaluation shell">
+        <div class="section-heading">
+          <div><span class="index">03</span><h2>Measured before claimed</h2></div>
+          <p>The answerability cutoff is fitted on development questions and measured separately on held-out questions.</p>
+        </div>
+        <div class="eval-grid">
+          <div class="chart-card">
+            <div class="card-top"><span>HELD-OUT HIT@1</span><small>Higher is better</small></div>
+            <div class="bar-row"><label>Semantic</label><div><i style="width:85.7%"></i></div><strong>85.7%</strong></div>
+            <div class="bar-row"><label>Hybrid</label><div><i style="width:100%"></i></div><strong>100%</strong></div>
+            <div class="bar-row"><label>Reranked</label><div><i class="bright" style="width:100%"></i></div><strong>100%</strong></div>
+          </div>
+          <div class="score-cards">
+            <article><span>MRR</span><strong>1.000</strong><small>Held-out reranked</small></article>
+            <article><span>FACT COVERAGE</span><strong>100%</strong><small>Six answer cases</small></article>
+            <article><span>CITATIONS</span><strong>100%</strong><small>Evidence-linked</small></article>
+            <article><span>GROUNDING</span><strong>80.9%</strong><small>Lexical diagnostic</small></article>
+          </div>
+        </div>
+        <p class="honesty">Results use a deliberately small fictional dataset and demonstrate the evaluation design, not production readiness.</p>
+      </section>
+    </main>
+
+    <footer class="shell">
+      <div><span class="brand-mark">TP</span><p>Designed and engineered as an end-to-end RAG portfolio project.</p></div>
+      <a class="github-link" href="https://github.com/TanveerMewara/travel-policy-copilot" target="_blank" rel="noreferrer">Explore the implementation ↗</a>
+    </footer>
+    <script src="/web/app.js" defer></script>
+  </body>
+</html>
+

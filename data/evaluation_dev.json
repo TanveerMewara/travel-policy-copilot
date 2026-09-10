@@ -1,0 +1,62 @@
+[
+  {
+    "id": "harbor-2026-cancel",
+    "question": "Under the 2026 Harbor Hotel standard policy, what happens if I cancel 36 hours before check-in?",
+    "expected_source": "data/policies/harbor_standard.md",
+    "expected_section": "Cancellation"
+  },
+  {
+    "id": "harbor-2025-cancel",
+    "question": "For the 2025 Harbor Hotel standard rate, what is the charge when cancelling 60 hours before check-in?",
+    "expected_source": "data/policies/harbor_standard_2025.md",
+    "expected_section": "Cancellation"
+  },
+  {
+    "id": "harbor-saver-refund",
+    "question": "Can I get my money back on a 2026 Harbor Hotel saver rate?",
+    "expected_source": "data/policies/harbor_saver.md",
+    "expected_section": "Cancellation"
+  },
+  {
+    "id": "pine-2026-cancel",
+    "question": "What fee applies if I cancel Pine Hotel's 2026 standard rate 12 hours before arrival?",
+    "expected_source": "data/policies/pine_standard.md",
+    "expected_section": "Cancellation"
+  },
+  {
+    "id": "pine-2025-arrival",
+    "question": "What was the standard check-in time at Pine Hotel during 2025?",
+    "expected_source": "data/policies/pine_standard_2025.md",
+    "expected_section": "Check-in"
+  },
+  {
+    "id": "summit-flex-cancel",
+    "question": "What does Summit Hotel's 2026 flexible rate charge for cancelling 8 hours before check-in?",
+    "expected_source": "data/policies/summit_flexible.md",
+    "expected_section": "Cancellation"
+  },
+  {
+    "id": "summit-saver-arrival",
+    "question": "When is check-in for a Summit Hotel saver booking in 2026?",
+    "expected_source": "data/policies/summit_saver.md",
+    "expected_section": "Check-in"
+  },
+  {
+    "id": "unsupported-transfer",
+    "question": "Does Harbor Hotel provide an airport transfer?",
+    "expected_source": null,
+    "expected_section": null
+  },
+  {
+    "id": "unsupported-breakfast",
+    "question": "Is breakfast included at Pine Hotel?",
+    "expected_source": null,
+    "expected_section": null
+  },
+  {
+    "id": "unsupported-pets",
+    "question": "Are pets allowed at Summit Hotel?",
+    "expected_source": null,
+    "expected_section": null
+  }
+]

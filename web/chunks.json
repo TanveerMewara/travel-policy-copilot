@@ -1,0 +1,198 @@
+[
+  {
+    "chunk_id": "harbor-saver-2026::cancellation",
+    "title": "Harbor Hotel — Saver Rate",
+    "section": "Cancellation",
+    "text": "Saver Rate bookings are non-refundable. Cancelling a booking does not qualify for a refund.",
+    "source": "data/policies/harbor_saver.md",
+    "metadata": {
+      "document_id": "harbor-saver-2026",
+      "supplier": "Harbor Hotel",
+      "rate": "Saver Rate",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31"
+    }
+  },
+  {
+    "chunk_id": "harbor-saver-2026::changes",
+    "title": "Harbor Hotel — Saver Rate",
+    "section": "Changes",
+    "text": "Date changes are not permitted for Saver Rate bookings.",
+    "source": "data/policies/harbor_saver.md",
+    "metadata": {
+      "document_id": "harbor-saver-2026",
+      "supplier": "Harbor Hotel",
+      "rate": "Saver Rate",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31"
+    }
+  },
+  {
+    "chunk_id": "harbor-standard-2026::cancellation",
+    "title": "Harbor Hotel — Standard Rate",
+    "section": "Cancellation",
+    "text": "Cancellations at least 48 hours before check-in receive a full refund. Cancellations within 48 hours of check-in incur a charge equal to the first night.",
+    "source": "data/policies/harbor_standard.md",
+    "metadata": {
+      "document_id": "harbor-standard-2026",
+      "supplier": "Harbor Hotel",
+      "rate": "Standard Rate",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31"
+    }
+  },
+  {
+    "chunk_id": "harbor-standard-2026::check-in",
+    "title": "Harbor Hotel — Standard Rate",
+    "section": "Check-in",
+    "text": "Check-in starts at 3 PM. Early check-in is subject to room availability and is not guaranteed.",
+    "source": "data/policies/harbor_standard.md",
+    "metadata": {
+      "document_id": "harbor-standard-2026",
+      "supplier": "Harbor Hotel",
+      "rate": "Standard Rate",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31"
+    }
+  },
+  {
+    "chunk_id": "harbor-standard-2025::cancellation",
+    "title": "Harbor Hotel — Standard Rate",
+    "section": "Cancellation",
+    "text": "Cancellations at least 72 hours before check-in receive a full refund. Cancellations within 72 hours of check-in incur a charge equal to two nights.",
+    "source": "data/policies/harbor_standard_2025.md",
+    "metadata": {
+      "document_id": "harbor-standard-2025",
+      "supplier": "Harbor Hotel",
+      "rate": "Standard Rate",
+      "effective_from": "2025-01-01",
+      "effective_to": "2025-12-31"
+    }
+  },
+  {
+    "chunk_id": "harbor-standard-2025::check-in",
+    "title": "Harbor Hotel — Standard Rate",
+    "section": "Check-in",
+    "text": "Check-in starts at 4 PM. Early check-in is not available for this policy period.",
+    "source": "data/policies/harbor_standard_2025.md",
+    "metadata": {
+      "document_id": "harbor-standard-2025",
+      "supplier": "Harbor Hotel",
+      "rate": "Standard Rate",
+      "effective_from": "2025-01-01",
+      "effective_to": "2025-12-31"
+    }
+  },
+  {
+    "chunk_id": "pine-standard-2026::cancellation",
+    "title": "Pine Hotel — Standard Rate",
+    "section": "Cancellation",
+    "text": "Cancellations at least 24 hours before check-in receive a full refund. Cancellations within 24 hours of check-in incur a charge equal to the first night.",
+    "source": "data/policies/pine_standard.md",
+    "metadata": {
+      "document_id": "pine-standard-2026",
+      "supplier": "Pine Hotel",
+      "rate": "Standard Rate",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31"
+    }
+  },
+  {
+    "chunk_id": "pine-standard-2026::check-in",
+    "title": "Pine Hotel — Standard Rate",
+    "section": "Check-in",
+    "text": "Check-in starts at 2 PM. Guests must present a booking confirmation at arrival.",
+    "source": "data/policies/pine_standard.md",
+    "metadata": {
+      "document_id": "pine-standard-2026",
+      "supplier": "Pine Hotel",
+      "rate": "Standard Rate",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31"
+    }
+  },
+  {
+    "chunk_id": "pine-standard-2025::cancellation",
+    "title": "Pine Hotel — Standard Rate",
+    "section": "Cancellation",
+    "text": "Cancellations at least 48 hours before check-in receive a full refund. Cancellations within 48 hours incur a charge equal to the first night.",
+    "source": "data/policies/pine_standard_2025.md",
+    "metadata": {
+      "document_id": "pine-standard-2025",
+      "supplier": "Pine Hotel",
+      "rate": "Standard Rate",
+      "effective_from": "2025-01-01",
+      "effective_to": "2025-12-31"
+    }
+  },
+  {
+    "chunk_id": "pine-standard-2025::check-in",
+    "title": "Pine Hotel — Standard Rate",
+    "section": "Check-in",
+    "text": "Check-in starts at 1 PM. Guests must present a government-issued identity document at arrival.",
+    "source": "data/policies/pine_standard_2025.md",
+    "metadata": {
+      "document_id": "pine-standard-2025",
+      "supplier": "Pine Hotel",
+      "rate": "Standard Rate",
+      "effective_from": "2025-01-01",
+      "effective_to": "2025-12-31"
+    }
+  },
+  {
+    "chunk_id": "summit-flexible-2026::cancellation",
+    "title": "Summit Hotel — Flexible Rate",
+    "section": "Cancellation",
+    "text": "Cancellations at least 12 hours before check-in receive a full refund. Cancellations within 12 hours incur a fee equal to 25 percent of the first night.",
+    "source": "data/policies/summit_flexible.md",
+    "metadata": {
+      "document_id": "summit-flexible-2026",
+      "supplier": "Summit Hotel",
+      "rate": "Flexible Rate",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31"
+    }
+  },
+  {
+    "chunk_id": "summit-flexible-2026::check-in",
+    "title": "Summit Hotel — Flexible Rate",
+    "section": "Check-in",
+    "text": "Check-in starts at 3 PM. Early check-in may be purchased when rooms are available.",
+    "source": "data/policies/summit_flexible.md",
+    "metadata": {
+      "document_id": "summit-flexible-2026",
+      "supplier": "Summit Hotel",
+      "rate": "Flexible Rate",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31"
+    }
+  },
+  {
+    "chunk_id": "summit-saver-2026::cancellation",
+    "title": "Summit Hotel — Saver Rate",
+    "section": "Cancellation",
+    "text": "Saver Rate bookings are non-refundable after purchase.",
+    "source": "data/policies/summit_saver.md",
+    "metadata": {
+      "document_id": "summit-saver-2026",
+      "supplier": "Summit Hotel",
+      "rate": "Saver Rate",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31"
+    }
+  },
+  {
+    "chunk_id": "summit-saver-2026::check-in",
+    "title": "Summit Hotel — Saver Rate",
+    "section": "Check-in",
+    "text": "Check-in starts at 3 PM. The booking holder must be present at check-in.",
+    "source": "data/policies/summit_saver.md",
+    "metadata": {
+      "document_id": "summit-saver-2026",
+      "supplier": "Summit Hotel",
+      "rate": "Saver Rate",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31"
+    }
+  }
+]

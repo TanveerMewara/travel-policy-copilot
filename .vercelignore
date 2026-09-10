@@ -1,0 +1,12 @@
+.venv
+.cache
+.pytest_cache
+.ruff_cache
+.tools
+__pycache__
+logs
+data/index/vectors.npy
+tests
+docs
+*.pyc
+.portfolio-work
